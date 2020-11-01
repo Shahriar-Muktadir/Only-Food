@@ -1,0 +1,998 @@
+*{
+			
+	font-family: 'Bauhaus 93', cursive;
+}
+
+html{
+scroll-behavior: smooth;
+
+}
+
+
+
+/* Logo */
+.cust_logo{
+
+	width: 60px;
+	height: 68px;
+}
+
+/* Menu links */
+.cust_link{
+	font-size: 25px;
+	color: black!important;
+}
+
+.cust_link:hover{
+	opacity: 0.5;
+}
+
+.active{
+	color: #b01b13!important;
+}
+
+
+/*Carousel customization*/
+
+
+.carousel-caption{
+	top: 55%;
+	color: #fdd000;
+	text-align: left;
+}
+
+.carousel-caption h5{
+	font-size: 35px;
+
+}
+
+.carousel-caption p{
+	font-size: 20px;
+	letter-spacing: 2px;
+
+}
+
+.carousel-indicators li{
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+
+}
+
+.carousel-indicators .active{
+	background-color: #FDD000!important;
+}
+
+
+section{
+	background-color: #e8e8e8;
+}
+
+/*Our story*/
+
+.Story_font{
+	font-size: 20px;
+}
+
+#Our_staff .container h3, h4{
+
+	font-family: 'Comic Sans MS', cursive!important;
+}
+
+#Our_staff .cust_width{
+	width: 45%;
+}
+
+/*Popular food items*/
+
+.img__wrap{
+	position: relative;
+
+}
+
+.img__description{
+	position: absolute;
+	width: 350px;
+	height: 442px;
+	background-color: black;
+	top: 0px;
+	opacity: 0.5;
+	visibility: hidden;
+	transition: 0.6s ease-in-out;
+}
+
+.img__description .details h6{
+	position: absolute;
+	color: white;
+	text-align: center;
+	font-size: 35px;
+	bottom: 152px;
+	right: 128px;
+	
+}
+
+.img__wrap:hover .img__description{
+	visibility: visible;
+	opacity: 0.5;
+	
+}
+
+
+/*Customer reviews*/
+
+.custom_carousel h2 {
+	color: #333;
+	text-align: center;
+	text-transform: uppercase;
+    font-family: 'Bauhaus 93', cursive;
+	font-weight: bold;
+	position: relative;
+	margin: 30px 0 60px;
+
+}
+
+.custom_carousel .col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.custom_carousel .carousel {
+	margin: 50px auto;
+	
+}
+.custom_carousel .carousel-item {
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 290px;
+}
+.custom_carousel .carousel .item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+.custom_carousel .carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.custom_carousel .carousel .testimonial {
+	padding: 30px 0 10px;
+}
+
+.custom_carousel .carousel .overview{
+	text-transform: uppercase;
+	color: black;
+	font-size: 20px;
+}
+.custom_carousel .carousel .carousel-control {
+	width: 0;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+	background: none;
+}
+.custom_carousel .carousel-control i {
+    font-size: 68px;
+	line-height: 42px;
+    position: absolute;
+    display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.custom_carousel .carousel .carousel-indicators {
+	bottom: -40px;
+}
+.custom_carousel .carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 1px 3px;
+	border-radius: 50%;
+}
+.custom_carousel .carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.custom_carousel .carousel-indicators li.active {	
+	background: #555;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+.custom_carousel .testimonial{
+	color: black;
+}
+
+
+.custom_carousel .carousel-control-prev{
+	left: -83px;
+}
+
+.custom_carousel .carousel-control-next{
+	right: -83px;
+}
+
+.resz{
+	font-size: 30px;
+	
+}
+
+
+/*Footer design*/
+
+.new_font{
+	font-family: 'Comic Sans MS', cursive;
+}
+
+.btn{
+	border-radius: 30px;
+	width: 130px;
+}
+
+.fcust_link{
+	padding-right: 45px;
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+}
+
+.fcust_link:hover{
+	text-decoration: none;
+	color: #7E7E7E;
+}
+footer li{
+	list-style-type: none;
+	text-decoration: none;
+}
+.cust_input{
+	background-color: #e0e0e0;
+	
+}
+
+.Order_here, form{
+	padding-bottom: 30px;
+}
+
+
+/*Order page*/
+
+.Contact_PYO_btn{
+	width: 170px;
+	float: right;
+}
+
+/*order page modal*/
+
+.modal_icon{
+	height: 80px;
+	padding-left: 178px;
+}
+
+.modal_head{
+	padding-left: 192px;
+}
+
+.modal_close{
+	margin-right: 178px;
+}
+/*Responsive design*/
+ /*For maximum screen*/
+@media only screen and (min-width: 1025px){
+	.myImg{
+	height: 400px;
+	width: 330px;
+	
+}
+
+.img__description{
+	
+width: 330px;
+height: 400px;
+transition: 0.6s ease-in-out;
+}
+
+.img__description .details h6{
+font-size: 30px;
+bottom: 150px;
+right: 110px;
+}
+
+}
+/*}*/
+/*For Big Screen8*/
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+
+.myImg{
+	height: 366px;
+	width: 290px;
+	
+}
+
+.img__description{
+	
+width: 290px;
+height: 366px;
+transition: 0.6s ease-in-out;
+}
+
+.img__description .details h6{
+font-size: 20px;
+bottom: 150px;
+right: 100px;
+}
+
+}
+/*For tablet and  iphones*/
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+
+/*Menu links*/
+.cust_link{
+	font-size: 20px;
+}
+
+
+/*carousel*/
+.carousel-caption h5{
+	font-size: 20px;
+	margin-bottom:2px;
+}
+
+.carousel-caption p{
+	font-size: 15px;
+
+}
+
+/*Popular food items*/
+
+.myImg{
+	height: 280px;
+	width: 222px;
+	
+}
+.img__description{
+	
+width: 222px;
+height: 280px;
+transition: 0.6s ease-in-out;
+}
+
+.img__description .details h6{
+font-size: 20px;
+bottom: 110px;
+right: 78px;
+}
+
+.cust_col_padding{
+	padding: 0;
+}
+
+/*Testimonial*/
+.custom_carousel .carousel {
+	
+	
+}
+
+.custom_carousel .carousel-control-prev{
+	left: -50px;
+}
+
+.custom_carousel .carousel-control-next{
+	right: -50px;
+}
+
+
+/*Footer*/
+
+.fcust_link{
+
+	padding-right: 0;
+
+}
+
+footer .pr-5{
+	padding-right: 21px!important;
+}
+
+.footer_modal_btn{
+	float: none!important;
+	margin-left: 43px;
+}
+
+/*fontawosome icons*/
+
+.faxs{
+	font-size: .75em;
+	margin: 0!important;
+}
+
+.res_cust_menu{
+	float: none!important;
+	text-align: center;
+	padding-left:15px;
+}
+/*Contact us*/
+.Contact_Submit_btn{
+	margin-left: 35px!important;
+}
+
+/*Order page*/
+.Order_here{
+	width: 75%!important;
+}
+.Contact_PYO_btn{
+	margin-left: 0px!important;
+	margin-right: 190px;
+}
+
+/*Food gallery page*/
+.card .btn{
+	width: 90px;
+	margin-left: 0!important;
+	margin-top: 0!important;
+	font-size: 12px;
+	margin-right: 20px!important;
+}
+.card-title{
+	font-size: 15px;
+}
+
+.card-body .col-sm-7{
+	flex: 0 0 45%;
+}
+
+
+
+}
+
+/*For mobile phones*/
+
+@media only screen and (min-width: 576px) and (max-width: 768px){
+
+
+/*Menu links*/
+.cust_link{
+	font-size: 15px;
+	padding-bottom: 0px;
+}
+
+/*Popular food items*/
+
+.myImg{
+	height: 200px;
+	width: 159px;
+	
+}
+.img__description {
+    
+    width: 159px;
+	height: 200px;
+	transition: 0.6s ease-in-out;
+ 
+  }
+
+  .img__description .details h6{
+font-size: 20px;
+bottom: 70px;
+right: 50px;
+}
+
+ 
+
+ .cust_col_padding{
+ 	padding: 0;
+ }
+
+/*Testimonial*/
+.custom_carousel .carousel {
+	padding: 0 70px;
+	
+}
+
+.custom_carousel .carousel-control-prev{
+	left: 0;
+}
+
+.custom_carousel .carousel-control-next{
+	right: 0;
+}
+
+/*Footer*/
+.footer_text_align{
+	text-align: center!important;
+	margin-top: 20px;
+}
+
+.footer_modal_btn{
+	margin-right: 128px;
+	margin-bottom: 5px;
+}
+
+.C_links{
+	margin-top: 20px;
+}
+
+/*Our story page*/
+
+.Story_font{
+	font-size: 17px;
+}
+
+#Our_staff .cust_width{
+	width: 30%;
+}
+
+/*fontawosome icons*/
+
+.faxs{
+	font-size: .75em;
+}
+.Custom_fontawosem{
+	float: none!important;
+	padding-left:85px;
+}
+
+.res_cust_menu{
+	float: none!important;
+	text-align: center;
+	padding-left:85px;
+}
+
+.Contact_Submit_btn{
+	text-align: center;
+	margin-left: 116px;
+}
+
+/*Order here page*/
+
+.Order_here, .container{
+	width: 95%!important;
+}
+
+.Contact_PYO_btn{
+	float: none;
+	margin-left: 88px;
+}
+
+/*Food gallery page*/
+
+.card{
+	margin: 10px!important;
+}
+.card .btn{
+	margin-left: 0!important;
+}
+
+}
+
+@media only screen and (min-width: 440px) and (max-width: 574px){
+
+/*Popular food items*/
+
+.cust_col_padding{
+	padding-bottom: 20px;
+	width: 77%;
+	margin: auto;
+}
+.img__description {
+    width: 401px;
+    height: 506px;
+
+}
+
+
+
+}
+
+
+
+@media only screen and (max-width: 767px){
+
+.Custom_fontawosem{
+	float: none;
+	padding-left: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.faxs{
+	padding: 0 5px;
+}
+
+.footer_modal_btn{
+	float: none!important;
+	
+}
+
+}
+
+/* @media only screen and (min-width: 460px) and (max-width: 575px){
+.cust_link{
+	font-size: 20px;
+} */
+/*Popular food items*/
+/* 
+.myImg{
+	height: 90px;
+	width: 120px;
+	
+}
+.cust_col_padding{
+ 	padding: 0;
+ 	margin: 0;
+ }
+.img__description{
+	width: 120px;
+    height: 366px;
+}
+
+
+.img__description .details h6{
+	font-size: 25px;
+    bottom: 152px;
+    right: 106px;
+} */
+
+/*Customer reviews*/
+
+/* .custom_carousel .carousel .overview{
+	font-size: 16px;
+}
+ */
+
+/*Footer desing*/
+
+/* .mobo_h3{
+	text-align: center;
+	font-size: 25px;
+}
+
+.footer_modal_btn{
+	margin-right: 76px;
+}
+ */
+/*fontawosome icons*/
+
+/* .faxs{
+	font-size: .75em;
+	margin: 0!important;
+	margin-right: 10px!important;
+}
+.Custom_fontawosem{
+	float: none!important;
+	padding-left:50px;
+}
+
+.res_cust_menu{
+	margin-right: 0;
+	text-align: center;
+}
+
+.Contact_Submit_btn{
+	margin-left: 76px;
+}
+
+} */
+
+/* @media only screen and (min-width: 480px) and (max-width: 990px){
+.cust_link{
+	font-size: 20px;
+} */
+/*Popular food items*/
+/* 
+.cust_col_padding{
+ 	padding-bottom: 30px;
+ }
+
+.img__description{
+	width: 196px;
+	height: 246px;
+}
+
+
+.img__description .details h6{
+	font-size: 25px;
+	bottom: 90px;
+	right: 58px;
+}
+
+
+.details_Chaomin{
+bottom: 104px !important;
+right: 50px !important;
+}
+
+.details_Pizza {
+   right: 67px !important;
+   bottom: 109px !important;
+} */
+/*Customer reviews*/
+
+/* .custom_carousel .carousel .overview{
+	font-size: 16px;
+} */
+
+
+/*Footer desing*/
+/* 
+.mobo_h3{
+	text-align: center!important;
+	font-size: 25px;
+}
+
+.footer_modal_btn {
+    margin-right: 47px;
+    margin-bottom: 5px;
+}
+ */
+/*fontawosome icons*/
+
+/* .faxs{
+	font-size: .75em;
+	margin: 0!important;
+	margin-right: 10px!important;
+}
+.Custom_fontawosem{
+    float: none!important;
+    padding-left: 15px;
+}
+
+.res_cust_menu{
+	margin-right: 0;
+	text-align: center;
+}
+
+.Contact_Submit_btn{
+	margin-left: 150px;
+}
+
+.footer_text_align{
+		text-align: center!important;
+}
+
+
+} */
+
+
+/*
+
+@media only screen and (min-width: 991px) and (max-width:1199px){
+.details_Chaomin{
+	bottom: 122px!important;
+
+}
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width:1080px){
+.img__description {
+    width: 291px!important;
+    height: 367px!important;
+}
+
+
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width:1091px){
+.img__description {
+    width: 291px!important;
+    height: 367px!important;
+}
+
+
+}
+
+
+
+@media only screen and (min-width: 1009px) and (max-width:1024px){
+.img__description {
+    width: 221px;
+    height: 280px;
+
+}
+
+}
+
+@media only screen and (min-width: 767px) and (max-width:1024px){
+.img__description {
+    width: 151px;
+height: 190px;
+}
+.img__description .details h6 {
+    font-size: 15px;
+  
+
+
+}
+
+}
+
+@media only screen and (min-width: 601px) and (max-width:1024px){
+.img__description {
+    width: 151px;
+height: 190px;
+}
+.img__description .details h6 {
+    font-size: 15px;
+  
+
+
+}
+
+}
+
+@media only screen and (min-width: 541px) and (max-width:1024px){
+.img__description {
+    width: 402px;
+    height: 504px;
+}
+.img__description .details h6 {
+    font-size: 30px;
+  
+    bottom: 231px;
+right: 150px;
+
+}
+
+.details_Chaomin{
+	    bottom: 237px !important;
+    right: 133px !important;
+}
+
+.details_Pizza{
+	   bottom: 237px !important;
+    right: 133px !important;
+}
+
+}
+
+
+@media only screen and (min-width: 607px) and (max-width:1024px){
+.img__description {
+     width: 151px;
+height: 190px;
+}
+.img__description .details h6 {
+    font-size: 15px;
+  
+    bottom: 70px;
+right: 53px;
+
+}
+
+.details_Chaomin{
+	   
+    bottom: 70px!important;
+right: 53px!important;
+}
+
+.details_Pizza{
+	  
+    bottom: 70px!important;
+right: 53px!important;
+}
+
+}
+
+
+
+@media only screen and (min-width: 445px) and (max-width:1024px){
+.img__description {
+     width: 402px;
+    height: 504px;
+}
+.img__description .details h6 {
+   font-size: 30px;
+  
+    bottom: 231px;
+right: 150px;
+
+}
+
+
+.details_Chaomin{
+	    bottom: 237px !important;
+    right: 133px !important;
+}
+
+.details_Pizza{
+	   bottom: 237px !important;
+    right: 133px !important;
+}
+
+
+}
+
+
+@media only screen and (min-width: 425px) and (max-width:1024px){
+.img__description {
+     width: 373px;
+height: 471px;
+}
+.img__description .details h6 {
+   font-size: 30px;
+  
+    bottom: 231px;
+right: 150px;
+
+}
+
+
+.details_Chaomin{
+	    bottom: 237px !important;
+    right: 133px !important;
+}
+
+.details_Pizza{
+	   bottom: 237px !important;
+    right: 133px !important;
+}
+
+
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width:1264px){
+
+.card-body .col-sm-7{
+	max-width: 36.333%;
+}
+
+}
+
+
+@media only screen and (min-width: 1265px) and (max-width:1365px){
+
+.card-body .col-sm-7{
+	max-width: 47.333%;
+}
+
+}
+
+
+@media only screen and (min-width: 579px) and (max-width:767px){
+
+.card{
+	width: 530px;
+}
+
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width:1123px){
+.img__description {
+     width:  290px;
+height: 367px;
+}
+.img__description .details h6 {
+    font-size: 30px;
+  
+   right:90px;
+}
+
+
+}
+
+
+@media only screen and (min-width: 995px) and (max-width:1024px){
+.img__description {
+     width: 220px;
+height: 276px;
+}
+.img__description .details h6 {
+    font-size: 30px;
+  bottom: 118px;
+   right:90px;
+}
+
+.details_Chaomin{
+
+bottom: 128px!important;
+right: 53px!important;
+}
+
+}*/

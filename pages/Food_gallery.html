@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Food gallery</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Boostrapt cdn and other css file -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/hstyle.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+	<!-- fontawosome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- jQuery library -->
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<!-- Script for fontawosome -->
+<script src="https://kit.fontawesome.com/357cf294b1.js" crossorigin="anonymous"></script>
+<!-- Script and css for scrollup -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style type="text/css">
+  #scrollUp {
+   background-image: url("../icon/top.png");
+    bottom: 20px;
+    right: 20px;
+    width: 38px;    /* Width of image */
+    height: 38px;   /* Height of image */
+}
+</style>
+
+<script src="../js/jquery.scrollUp.js"></script>
+<script type="text/javascript">
+  var fff = jQuery.noConflict();
+  fff(document).ready(function(){
+    fff.scrollUp({
+        scrollName: 'scrollUp',      // Element ID
+        scrollDistance: 500,         // Distance from top/bottom before showing element (px)
+               // 'top' or 'bottom'
+        scrollSpeed: 300,           // Speed back to top (ms
+         // Text for element, can contain HTML
+         scrollText: ''
+        
+    });
+  });
+</script>
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <a class="navbar-brand" href="../index.html"><img class="cust_logo" src="../Logo/logo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link cust_link" href="../index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link cust_link" href="Our_Story.html">Our Story</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link cust_link active" href="Food_gallery.html">Food gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link cust_link" href="Order.html">Order</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Navbar end -->
+
+<!-- food gallery -->
+  <section id="food_gallery">
+    
+  
+  <div class="container-fluid py-5">
+      <h3 class="text-center">Our Food Menu</h1>
+      
+      <div class="row mt-5">  
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="../img/Chawmein.jpg" alt="Card image">
+            <div class="card-body">
+              <div class="row">
+              <div class="col-sm-7">
+                  <h4 class="card-title">Chawmein</h4>
+                  <h4 class="card-title">Price: Tk.25</h4>
+                </div>
+                <div class="col-sm-5">
+                <button type="button" onclick="window.location='Order.html';" class="btn btn-outline-dark mt-3 ml-4">Order now!!</button>
+                
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="../img/Hot spicy beef berger.jpg" alt="Card image">
+            <div class="card-body">
+              <div class="row">
+              <div class="col-sm-7 col-sm-4">
+                  <h4 class="card-title">Beef berger</h4>
+                  <h4 class="card-title">Price: Tk.25</h4>
+                </div>
+                <div class="col-sm-5">
+                   <button type="button" onclick="window.location='Order.html';" class="btn btn-outline-dark mt-3 ml-4">Order now!!</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="../img/Pizza.jpg" alt="Card image">
+            <div class="card-body">
+              <div class="row">
+              <div class="col-sm-7 col-sm-4">
+                  <h4 class="card-title">Pizza</h4>
+                  <h4 class="card-title">Price: Tk.15</h4>
+                </div>
+                <div class="col-sm-5">
+                   <button type="button" onclick="window.location='Order.html';" class="btn btn-outline-dark mt-3 ml-4">Order now!!</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="row mt-5">  
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="../img/Kacci.jpg" alt="Card image">
+            <div class="card-body">
+              <div class="row">
+              <div class="col-sm-7">
+                  <h4 class="card-title">Kacci</h4>
+                  <h4 class="card-title">Price: Tk.30</h4>
+                </div>
+                <div class="col-sm-5">
+                   <button type="button" onclick="window.location='Order.html';" class="btn btn-outline-dark mt-3 ml-4">Order now!!</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="../img/Fried rice.jpg" alt="Card image">
+            <div class="card-body">
+              <div class="row">
+              <div class="col-sm-7">
+                  <h4 class="card-title">Fried rice</h4>
+                  <h4 class="card-title">Price: Tk.20</h4>
+                </div>
+                <div class="col-sm-5">
+                   <button type="button" onclick="window.location='Order.html';" class="btn btn-outline-dark mt-3 ml-4">Order now!!</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="../img/Fish curry with rice.jpg" alt="Card image">
+            <div class="card-body">
+              <div class="row">
+              <div class="col-sm-7">
+                  <h4 class="card-title">Fish curry & rice</h4>
+                  <h4 class="card-title">Price: Tk.40</h4>
+                </div>
+                <div class="col-sm-5">
+                   <button type="button" onclick="window.location='Order.html';" class="btn btn-outline-dark mt-3 ml-4">Order now!!</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="row mt-5">  
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="../img/Chicken fry.jpg" alt="Card image">
+            <div class="card-body">
+              <div class="row">
+              <div class="col-sm-7">
+                  <h4 class="card-title">Chicken fry</h4>
+                  <h4 class="card-title">Price: Tk.11</h4>
+                </div>
+                <div class="col-sm-5">
+                   <button type="button" onclick="window.location='Order.html';" class="btn btn-outline-dark mt-3 ml-4">Order now!!</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="../img/Sphaghetti.jpg" alt="Card image">
+            <div class="card-body">
+              <div class="row">
+              <div class="col-sm-7">
+                  <h4 class="card-title">Sphaghetti</h4>
+                  <h4 class="card-title">Price: Tk.29</h4>
+                </div>
+                <div class="col-sm-5">
+                   <button type="button" onclick="window.location='Order.html';" class="btn btn-outline-dark mt-3 ml-4">Order now!!</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="../img/vegetables.jpg" alt="Card image">
+            <div class="card-body">
+              <div class="row">
+              <div class="col-sm-7">
+                  <h4 class="card-title">vegetables</h4>
+                  <h4 class="card-title">Price: Tk.19</h4>
+                </div>
+                <div class="col-sm-5">
+                  <button type="button" onclick="window.location='Order.html';" class="btn btn-outline-dark mt-3 ml-4">Order now!!</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row mt-5">  
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="../img/Nachos.jpg" alt="Card image">
+            <div class="card-body">
+              <div class="row">
+              <div class="col-sm-7">
+                  <h4 class="card-title">Nachos</h4>
+                  <h4 class="card-title">Price: Tk.125</h4>
+                </div>
+                <div class="col-sm-5">
+                   <button type="button" onclick="window.location='Order.html';" class="btn btn-outline-dark mt-3 ml-4">Order now!!</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="../img/Potato wedges.jpg" alt="Card image">
+            <div class="card-body">
+              <div class="row">
+              <div class="col-sm-7">
+                  <h4 class="card-title">Potato wedges</h4>
+                  <h4 class="card-title">Price: Tk.129</h4>
+                </div>
+                <div class="col-sm-5">
+                  <button type="button" onclick="window.location='Order.html';" class="btn btn-outline-dark mt-3 ml-4">Order now!!</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="../img/Red spicy pasta.jpg" alt="Card image">
+            <div class="card-body">
+              <div class="row">
+              <div class="col-sm-7">
+                  <h4 class="card-title">Red spicy pasta</h4>
+                  <h4 class="card-title">Price: Tk.119</h4>
+                </div>
+                <div class="col-sm-5">
+                  <button type="button" onclick="window.location='Order.html';" class="btn btn-outline-dark mt-3 ml-4">Order now!!</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="row mt-5">  
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="../img/Hot choclate.jpg" alt="Card image">
+            <div class="card-body">
+              <div class="row">
+              <div class="col-sm-7">
+                  <h4 class="card-title">Hot choclate</h4>
+                  <h4 class="card-title">Price: Tk.125</h4>
+                </div>
+                <div class="col-sm-5">
+                   <button type="button" onclick="window.location='Order.html';" class="btn btn-outline-dark mt-3 ml-4">Order now!!</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="../img/Truffeles.jpg" alt="Card image">
+            <div class="card-body">
+              <div class="row">
+              <div class="col-sm-7">
+                  <h4 class="card-title">Truffeles</h4>
+                  <h4 class="card-title">Price: Tk.129</h4>
+                </div>
+                <div class="col-sm-5">
+                   <button type="button" onclick="window.location='Order.html';" class="btn btn-outline-dark mt-3 ml-4">Order now!!</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="../img/Spring roll].jpg" alt="Card image">
+            <div class="card-body">
+              <div class="row">
+              <div class="col-sm-7">
+                  <h4 class="card-title">Spring roll</h4>
+                  <h4 class="card-title">Price: Tk.119</h4>
+                </div>
+                <div class="col-sm-5">
+                  <button type="button" onclick="window.location='Order.html';" class="btn btn-outline-dark mt-3 ml-4">Order now!!</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+</section>
+<!-- food gallery end -->
+
+<!-- Footer start -->
+<footer>
+	<div class="container pt-5">
+		<div class="row">
+    <div class="col-sm">
+     <h3 class="text-right footer_text_align">SIGN UP FOR OUR <br> EMAIL NEWS AND SPECIALS</h3>
+     <p class="text-right footer_text_align new_font pt-2">Get the latest restaurant news and
+	special delivered to your email inbox</p>
+
+  <!-- The modal beginnnig -->
+  <button type="button" class="mt-2 btn btn-outline-dark float-right footer_modal_btn" data-toggle="modal" data-target="#exampleModal">Sign up</button>
+          <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form action="" method="post">
+                  <div class="form-group">
+                  <label for="exampleInputName">Name</label>
+                  <input type="text" class="form-control" id="exampleInputName" placeholder="Enter name" required="">
+                  
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required="">
+                  
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required="">
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Confirm Password</label>
+                  <input type="password" class="form-control" id="confirmpassword" placeholder="Password" required="">
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Want to get email notification then check this out</label>
+                </div><br>
+                <button type="submit" class="btn btn-outline-dark">Submit</button>
+              </form>
+            </div>
+              
+            </div>
+          </div>
+        </div>
+
+	
+
+ <!-- The modal end -->
+
+  <br><br>
+	 <h4 class="text-right pt-2 footer_text_align">Connect with us<br>
+	on social</h4>
+	 <h1 class=" float-right pt-2 Custom_fontawosem">
+  <a class="text-dark" href="https://www.facebook.com/">
+  <i class="fab fa-facebook faxs"></i></a>
+      <a class="text-dark" href="https://twitter.com/"><i class="fab fa-twitter faxs m-2"></i></a>
+
+    <a class="text-dark" href="https://www.messenger.com/"><i class="fab fa-facebook-messenger faxs m-2"></i></a>
+    <a class="text-dark" href="https://www.whatsapp.com/"><i class="fab faxs fa-whatsapp m-2"></i></a>
+        </h1>
+    </div>
+    <div class="col-sm">
+      <h3 class="text-center pb-2">Links</h3>
+      <ul class="list-unstyled float-right pr-5 res_cust_menu">
+          <li>
+            <a class="fcust_link" href="../index.html">Home</a>
+          </li>
+          <li>
+            <a class="fcust_link" href="Our_Story.html">Our Story</a>
+          </li>
+          <li>
+            <a class="fcust_link active" href="Food_gallery.html">Food gallery</a>
+          </li>
+          <li>
+            <a  class="fcust_link" href="Order.html">Order</a>
+          </li>
+        </ul>
+    </div>
+    <div class="col-sm">
+       <h3 class="text-left pb-2">Contact Us</h3>
+                  <form action="" method="post">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Name</label>
+                  <input type="text" class="form-control cust_input" id="exampleInputEmail1" placeholder="Enter Name">
+                  
+                </div>
+ 
+                <div class="form-group">
+                  <label for="exampleInputMsg">Message</label>
+                  <textarea id="exampleInputMsg" class="cust_input form-control" placeholder="Enter Message"></textarea>
+                  
+                </div>
+                
+                <button type="submit" class="btn btn-outline-dark Contact_Submit_btn">Submit</button>
+              </form>
+    </div>
+  </div>
+  <h6 class="text-center py-3">©Copywright 2020 All right reserved</h6>
+	</div>
+</footer>
+<!-- Footer end -->
+
+
+<!-- Custom javascripts -->
+
+<script type="text/javascript">
+  var password = document.getElementById("exampleInputPassword1")
+  , confirmpassword = document.getElementById("confirmpassword");
+
+function validatePassword(){
+  if(password.value != confirmpassword.value) {
+    confirmpassword.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirmpassword.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirmpassword.onkeyup = validatePassword;
+</script>
+</body>
+</html>

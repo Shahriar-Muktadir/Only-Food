@@ -1,0 +1,21 @@
+*{
+	font-family: 'Bauhaus 93', cursive;
+}
+#food_gallery{
+	background-color: #f3f3f3;
+}
+
+.btn{
+	border-radius: 30px;
+}
+
+.card-body{
+	border:1px solid black;
+	border-top: none;
+}
+
+
+
+/*.card {
+	border: 2px solid black!important;
+}*/

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Order</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Boostrapt cdn and other css file -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/hstyle.css">
+	<!-- fontawosome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- jQuery library -->
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<!-- Script for fontawosome -->
+<script src="https://kit.fontawesome.com/357cf294b1.js" crossorigin="anonymous"></script>
+<!-- Scroll up -->
+<!-- Script and css for scrollup -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style type="text/css">
+  #scrollUp {
+   background-image: url("../icon/top.png");
+    bottom: 20px;
+    right: 20px;
+    width: 38px;    /* Width of image */
+    height: 38px;   /* Height of image */
+}
+</style>
+
+<script src="../js/jquery.scrollUp.js"></script>
+<script type="text/javascript">
+  var fff = jQuery.noConflict();
+  fff(document).ready(function(){
+    fff.scrollUp({
+        scrollName: 'scrollUp',      // Element ID
+        scrollDistance: 10,         // Distance from top/bottom before showing element (px)
+               // 'top' or 'bottom'
+        scrollSpeed: 300,           // Speed back to top (ms
+         // Text for element, can contain HTML
+         scrollText: ''
+        
+    });
+  });
+</script>
+<!-- Scroll up -->
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <a class="navbar-brand" href="../index.html"><img class="cust_logo" src="../Logo/logo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link cust_link" href="../index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link cust_link" href="Our_Story.html">Our Story</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link cust_link" href="Food_gallery.html">Food gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link cust_link active" href="Order.html">Order</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Navbar end -->
+
+<!-- Order here -->
+<section id="Order_here">
+  <div class="container py-5 m-auto w-50">
+    <h3 class="text-center">Order Here</h3>
+    <form id="form" action="" method="post">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Name</label>
+                  <input type="text" class="form-control cust_input" id="Name" placeholder="Enter Name" required="">
+                  <div id="show_error"></div>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control cust_input" id="exampleInputEmail1" placeholder="Enter email" required="">
+                  <div id="show_error_email"></div>
+                </div>
+                 <div class="form-group">
+                    <label for="exampleFormControlSelect1">Select your food item</label>
+                        <select class="form-control cust_input" id="exampleFormControlSelect1">
+                          <option>Chawmein</option>
+                          <option>Spicy beef berger</option>
+                          <option>Pizza</option>
+                          <option>Kacci</option>
+                          <option>Fried rice</option>
+                          <option>Fish curry with rice</option>
+                          <option>Chicken fry</option>
+                          <option>Sphaghetti</option>
+                          <option>vegetables</option>
+                          <option>Nachos</option>
+                          <option>Potato wedges</option>
+                          <option>Red spciy pasta</option>
+                          <option>Hot choclate</option>
+                          <option>Truffeles</option>
+                          <option>Spring roll</option>
+                        </select>
+                      </div>
+                <div class="form-group">
+                  <label for="exampleInputMsg">Address</label>
+                  <textarea id="exampleInputMsg" class="form-control cust_input" placeholder="Enter address" required=""></textarea>
+                  <div id="show_error_address"></div>
+                </div>
+                <br>
+                <!--  <button type="submit" class="btn btn-outline-dark Contact_Submit_btn Contact_PYO_btn" data-toggle="modal" data-target="#exampleModal">Place your order</button> -->
+                <button type="submit" class="btn btn-outline-dark Contact_Submit_btn Contact_PYO_btn" id="submit">Place your order</button>
+                <div id="Show_success"></div>
+              </form>
+
+              <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center modal_head" id="exampleModalLabel">Oops!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="text-center pr-3 modal_icon" src="../icon/alert.png"><br>
+        <p class="text-center pt-2">Please fillout with all details</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark modal_close" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Modal end -->
+  </div>
+</section>
+
+
+<!-- Footer start -->
+<footer>
+	<div class="container pt-5">
+		<div class="row">
+    <div class="col-sm">
+     <h3 class="text-right footer_text_align">SIGN UP FOR OUR <br> EMAIL NEWS AND SPECIALS</h3>
+     <p class="text-right footer_text_align new_font pt-2">Get the latest restaurant news and
+	special delivered to your email inbox</p>
+
+  <!-- The modal beginnnig -->
+  <button type="button" class="mt-2 btn btn-outline-dark float-right footer_modal_btn" data-toggle="modal" data-target="#eModal">Sign up</button>
+          <!-- Modal -->
+        <div class="modal fade" id="eModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form action="" method="">
+                  <div class="form-group">
+                  <label for="exampleInputName">Name</label>
+                  <input type="text" class="form-control" id="exampleInputName" placeholder="Enter name" required="">
+                  
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required="">
+                  
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required="">
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Confirm Password</label>
+                  <input type="password" class="form-control" id="confirmpassword" placeholder="Password" required="">
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Want to get email notification then check this out</label>
+                </div><br>
+                <button type="submit" class="btn btn-outline-dark">Submit</button>
+              </form>
+            </div>
+              
+            </div>
+          </div>
+        </div>
+
+	
+
+ <!-- The modal end -->
+
+  <br><br>
+	 <h4 class="text-right pt-2 footer_text_align">Connect with us<br>
+	on social</h4>
+	 <h1 class=" float-right pt-2 Custom_fontawosem">
+  <a class="text-dark" href="https://www.facebook.com/">
+  <i class="fab fa-facebook faxs"></i></a>
+      <a class="text-dark" href="https://twitter.com/"><i class="fab fa-twitter faxs m-2"></i></a>
+
+    <a class="text-dark" href="https://www.messenger.com/"><i class="fab fa-facebook-messenger faxs m-2"></i></a>
+    <a class="text-dark" href="https://www.whatsapp.com/"><i class="fab faxs fa-whatsapp m-2"></i></a>
+        </h1>
+    </div>
+    <div class="col-sm">
+      <h3 class="text-center pb-2 C_links">Links</h3>
+      <ul class="list-unstyled float-right pr-5 res_cust_menu">
+          <li>
+            <a class="fcust_link" href="../index.html">Home</a>
+          </li>
+          <li>
+            <a class="fcust_link" href="Our_Story.html">Our Story</a>
+          </li>
+          <li>
+            <a class="fcust_link" href="Food_gallery.html">Food gallery</a>
+          </li>
+          <li>
+            <a  class="fcust_link active" href="Order.html">Order</a>
+          </li>
+        </ul>
+    </div>
+    <div class="col-sm">
+       <h3 class="text-left pb-2">Contact Us</h3>
+                  <form action="" method="post">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Name</label>
+                  <input type="text" class="form-control cust_input" id="exampleInputEmail1" placeholder="Enter Name">
+                  
+                </div>
+ 
+                <div class="form-group">
+                  <label for="exampleInputMsg">Message</label>
+                  <textarea id="exampleInputMsg" class="cust_input form-control" placeholder="Enter Message"></textarea>
+                  
+                </div>
+                
+                <button type="submit" class="btn btn-outline-dark Contact_Submit_btn">Submit</button>
+              </form>
+    </div>
+
+  </div>
+  <h6 class="text-center py-3">©Copywright 2020 All right reserved</h6>
+	</div>
+</footer>
+<!-- Footer end -->
+
+
+<!-- Custom javascripts -->
+
+<script type="text/javascript">
+  var password = document.getElementById("exampleInputPassword1")
+  , confirmpassword = document.getElementById("confirmpassword");
+
+function validatePassword(){
+  if(password.value != confirmpassword.value) {
+    confirmpassword.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirmpassword.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirmpassword.onkeyup = validatePassword;
+</script>
+
+<script type="text/javascript">
+  $("#submit").click(function() {
+      var name =$("#Name").val();
+        var email =$("#exampleInputEmail1").val();
+        var massage =$("#exampleInputMsg").val();
+       
+      
+      if (name == "") {
+            $('#show_error').html('*Please fill your name correctly');
+            $('#show_error').css('color','red');
+            return false;
+        }
+
+        else if (name.length <=2) {
+            $('#show_error').html('*Must be atleast 3');
+            $('#show_error').css('color','red');
+            return false;
+        }
+
+        else if (email == "") {
+            $('#show_error_email').html('*Please fill your mail out first');
+            $('#show_error_email').css('color','red');
+            return false;
+        }
+
+        else if ((email.length <=2) || (email.length >=26)) {
+            $('#show_error_email').html('*Must be between 3 and 25 characters**');
+            $('#show_error_email').css('color','red');
+            return false;
+        }
+
+        
+        else if (massage == "") {
+            $('#show_error_address').html('*Please put your address correctly**');
+            $('#show_error_address').css('color','red');
+            return false;
+        }
+
+        else{
+        		
+        			 $('#Show_success').html('Your order has been placed successfully')
+            			$('#Show_success').css('color','green');
+            	
+                  return false;
+        		
+   		}
+
+
+
+        
+
+    
+      });
+
+  
+
+     
+</script>
+</body>
+</html>
